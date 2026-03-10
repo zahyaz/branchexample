@@ -65,7 +65,7 @@ fetch("https://jsonplaceholder.typicode.com/posts/1", {
     body: JSON.stringify({ title: "Partially Updated" })
 })
 .then(res => res.json())
-.then(data => console.log("Patched:", data));
+.then(data => console.log("Patched: I did a patch", data));
 
 
 
@@ -75,7 +75,7 @@ fetch("https://jsonplaceholder.typicode.com/posts/1", {
     method: "DELETE"
 })
 .then(res => res.json())
-.then(data => console.log("Deleted:", data));
+.then(data => console.log("Deleted the resource", data));
 
 
 // GET - Already shown above, explicit example:
