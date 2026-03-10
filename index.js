@@ -2,14 +2,6 @@
 // Why Do We Need Asynchronous Operations?
 // ============================================
 
-// Example 1: Synchronous Operation (Blocking)
-// This would freeze the UI
-
-console.log("=== Synchronous (Blocking) Example ===");
-console.log("Start");
-// Imagine this is a large image download
-for (let i = 0; i < 1000000000; i++) {} // Blocks execution
-console.log("End - UI would be frozen during the loop");
 
 console.log("\n=== Asynchronous with Promises ===");
 
